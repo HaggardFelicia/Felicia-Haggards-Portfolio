@@ -24,17 +24,36 @@ const page = {
                 maxLength: 96
             }
         },
-        // content for the page
+        // image for the project
+        {
+            name: 'image',
+            title: 'Image',
+            type: 'image',
+            // hotspot for the image
+            options: {
+                hotspot: true
+            },
+            // alt for the image
+            fields: [
+                {
+                    name: 'alt',
+                    title: 'Alt',
+                    type: 'string',
+                }
+            ]
+        },
+        // url for the project
+        {
+            name: 'url',
+            title: 'URL',
+            type: 'url',
+        },
+        // content for the project
         {
             name: 'content',
             title: 'Content',
             type: 'array',
-            // creates type of block for the content
-            of: [
-                {
-                    type: 'block'
-                }
-            ]
+            of: [{type: 'block'}],
         }
     ]
 }

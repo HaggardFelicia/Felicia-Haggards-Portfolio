@@ -44,8 +44,12 @@ export async function getPages(): Promise<Page[]>{
         groq`*[_type=='page']{
             _id, 
             _createdAt,
-            title,
+            name,
             "slug": slug.current,
+            "image": image.asset->url,
+            url, 
+            content,
+            "alt" : image.alt
         }`
     )    
 }
@@ -53,11 +57,14 @@ export async function getPages(): Promise<Page[]>{
 export async function getPage(slug: string): Promise<Page>{
     return createClient(clientConfig).fetch(
         groq`*[_type=='page' && slug.current == $slug][0]{
-            _id, 
+           _id, 
             _createdAt,
-            title,
+            name,
             "slug": slug.current,
-            content
+            "image": image.asset->url,
+            url, 
+            content,
+            "alt" : image.alt
         }`,
         {slug}
     )
