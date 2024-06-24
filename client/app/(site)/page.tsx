@@ -31,7 +31,7 @@ export default async function Home() {
               alt={project.name}
               width={750}
               height={300}
-              className="object-cover rounded-lg border border-gray hover:border-rose"/>
+              className="object-cover rounded-lg border-2 border-gray hover:border-rose"/>
             )}
 
             {/* Project Name */}

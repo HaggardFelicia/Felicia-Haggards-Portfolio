@@ -25,7 +25,7 @@ export default async function Skills() {
                 alt={skill.name}
                 width={150}
                 height={150}
-                className="object-cover rounded-lg border border-gray hover:border-rose bg-blue-950"/>
+                className="object-cover rounded-lg border-2 border-gray hover:border-rose bg-blue-950"/>
             )}
 
             {/* Skill Name */}
