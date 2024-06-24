@@ -15,7 +15,7 @@ export default async function Skills() {
         {/* mapping over the skills */}
         {skills.map((skill)=>(
             <div key={skill._id}
-            className="border-4 border-gray rounded-xl p-1 hover:border-rose hover:scale-105 transition"
+            className="border-4 border-gray rounded-xl p-1 hover:border-rose hover:scale-105 transition bg-blue-950"
             >
 
             {/* skill Image */}
@@ -25,7 +25,7 @@ export default async function Skills() {
                 alt={skill.name}
                 width={150}
                 height={150}
-                className="object-cover rounded-lg border-2 border-gray hover:border-rose bg-blue-950"/>
+                className="object-cover rounded-lg border-2 border-gray hover:border-rose bg-blue-900"/>
             )}
 
             {/* Skill Name */}
