@@ -2,6 +2,7 @@ import { Project } from "@/types/Project";
 import { createClient, groq } from "next-sanity";
 import clientConfig from "./config/client-config";
 import { Page } from "@/types/Page";
+import { Skill } from "@/types/Skill";
 
 // Function to get all the projects
 export async function getProjects(): Promise<Project[]>{
@@ -44,7 +45,7 @@ export async function getPages(): Promise<Page[]>{
         groq`*[_type=='page']{
             _id, 
             _createdAt,
-            name,
+            title,
             "slug": slug.current,
             "image": image.asset->url,
             url, 
@@ -59,7 +60,7 @@ export async function getPage(slug: string): Promise<Page>{
         groq`*[_type=='page' && slug.current == $slug][0]{
            _id, 
             _createdAt,
-            name,
+            title,
             "slug": slug.current,
             "image": image.asset->url,
             url, 
@@ -69,3 +70,18 @@ export async function getPage(slug: string): Promise<Page>{
         {slug}
     )
 }
+// Function to get all skills
+export async function getSkills(): Promise<Skill[]>{
+    return createClient(clientConfig).fetch(
+        groq`*[_type=='skill']{
+            _id, 
+            _createdAt,
+            name,
+            "slug": slug.current,
+            "image": image.asset->url,
+            url, 
+            content,
+            "alt" : image.alt
+        }`
+    )    
+};

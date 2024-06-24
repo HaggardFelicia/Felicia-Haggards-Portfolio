@@ -1,4 +1,34 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&display=swap');
 
+.heading-text{
+    font-family: "Cookie", cursive;
+    letter-spacing: 3px;
+}
+.p-text{
+    font-family: "Comfortaa", sans-serif;
+    letter-spacing: 0;
+}
+.tooltip{
+    position: relative;
+    cursor: pointer;
+}
+.tooltiptext{
+    visibility: hidden;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  /* 
+
+.comfortaa-<uniquifier> {
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+*/

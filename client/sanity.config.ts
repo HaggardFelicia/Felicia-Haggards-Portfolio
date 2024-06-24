@@ -2,6 +2,9 @@ import { defineConfig } from "sanity";
 import { deskTool } from "sanity/desk";
 import project from './sanity/schemas/project-schema'
 import page from './sanity/schemas/page-schema'
+import skill from './sanity/schemas/skill-schema'
+
+
 
 const config = defineConfig({
     projectId: 'feri6r1n',
@@ -13,7 +16,8 @@ const config = defineConfig({
     schema: {
         types: [
             project,
-            page
+            page,
+            skill        
         ]
     }
 });
