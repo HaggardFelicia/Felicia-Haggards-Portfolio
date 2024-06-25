@@ -14,9 +14,9 @@
     @tailwind utilities;
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&display=swap&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap&family=Merienda:wght@300..900&display=swap');
 
-/**-----------------------
- * *       Layout Styles
- *------------------------**/
+/**---------------------------
+ * *       Layout Page Styles
+ *----------------------------**/
     /* Page responsive padding */
     .responsive-page{
         @apply max-w-md md:max-w-2xl lg:max-w-5xl mx-auto py-10;
@@ -27,7 +27,7 @@
     }
     /* Header Logo/Name Link */
     .responsive-logo-link{
-        @apply bg-gradient-to-b from-red-900 via-red-500 to-rose bg-clip-text text-transparent text-3xl font-bold font-merienda md:font-semibold md:font-cookie md:text-6xl;
+        @apply bg-gradient-to-b from-red-900 via-red-500 to-rose bg-clip-text text-transparent text-4xl tracking-3 font-bold font-cookie md:font-semibold md:text-6xl;
     }
     /* header page links */
     .header-links{
@@ -67,6 +67,7 @@
     .responsive-h2-text{
         @apply text-2xl font-merienda md:text-3xl lg:text-4xl font-bold tracking-2;
     }
+
 /**-----------------------
  * *       Grid
  *------------------------**/
@@ -78,6 +79,7 @@
         @apply mt-8 grid grid-cols-3  md:grid-cols-4 lg:grid-cols-6 gap-4;
     
     }
+
 /**-----------------------
  * *       Cards
  *------------------------**/
@@ -100,9 +102,38 @@
     .margin3{
         @apply my-3;
     }
+    .margin4rem{
+        @apply my-[4rem];
+    }
+
 /**--------------------------------
  * *       Project's Individual Page
  *---------------------------------**/
     .a-text{
         @apply rounded-lg font-bold py-3 px-4 whitespace-nowrap hover:bg-rose text-rose hover:text-blue-dark font-merienda text-xl tracking-1;
     }
+
+/**-----------------------
+ * *       About Page
+ *------------------------**/
+    /* Name Responsive Design */
+    .responsive-name{
+        @apply text-2xl font-black font-merienda  bg-gradient-to-b from-red-900 via-red-700 to-rose bg-clip-text text-transparent md:font-cookie md:text-5xl md:tracking-2;
+    }
+    /* School info */
+    .school-border{
+        @apply border-2 border-gray rounded-xl bg-blue-950 p-1 md:flex md:justify-between md:p-2;
+    }
+    .school-image{
+        @apply object-cover w-[450px] aspect-auto rounded-lg mx-auto md:w-[300px];
+    }
+    .school-text-div{
+        @apply text-center py-10 md:text-right md:pt-4 md:pb-0 lg:py-10;
+    }
+    .school-text-title{
+        @apply bg-gradient-to-b from-red-900  via-red-700 to-rose bg-clip-text text-transparent  text-4xl font-merienda font-medium -tracking-3 lg:text-5xl;
+    }
+    .school-grad-date{
+        @apply text-gray text-base font-comfortaa md:text-xl;
+    }
+

@@ -6,22 +6,21 @@ export default function page() {
   return (
     <div>
         {/* Greeting Section */}
-        <h1 className='bg-gradient-to-b from-red-900  via-red-700 to-rose bg-clip-text text-transparent font-black text-6xl mb-6 drop-shadow tooltip heading-text'>Osiyo!
-            <span className='tooltiptext text-base text-rose bg-blue-950 p-1 ml-3 justify-center my-auto p-text'>Osiyo means hello in the Tsalagi (Cherokee) language</span></h1>
+        <h1 className='responsive-special-text'>About</h1>
 
 
         {/* Short Intro */}
-        <p className='text-2xl font-bold text-rose p-text my-[3rem]'>My name is <span>Felicia Haggard</span>! I am a Full Stack Web Developer. I was taught the MERN stack at Full Sail. I currently use React, TypeScript, SASS, Sanity, and Next.</p>
+        <p className='responsive-p-text margin4rem text-rose indent-10'>My name is <span className='responsive-name'>Felicia Haggard!</span>  I am a Full Stack Web Developer. I was taught the MERN stack at Full Sail University. I currently use React, TypeScript, Tailwind CSS, SASS, Sanity, and Next.</p>
 
         {/* School Info */}
-        <div className="border-2 border-gray rounded-xl p-1 flex justify-between bg-blue-950">
+        <div className="school-border">
           <div className=''>
-            <Image src={Fullsail} alt="Full Sail University Logo" width={300} height={300} className='rounded-lg' />
+            <Image src={Fullsail} alt="Full Sail University Logo"  className='school-image' />
           </div>
-          <div className='text-right py-10'>
-            <h2 className='bg-gradient-to-b from-red-900  via-red-700 to-rose bg-clip-text text-transparent  text-5xl heading-text font-medium'>Full Sail University</h2>
-            <p className='text-rose text-xl p-text'>Associate of Science in Web Development</p>
-            <p className="text-gray text-xl p-text">April 05, 2024</p>
+          <div className='school-text-div'>
+            <h2 className='school-text-title'>Full Sail University</h2>
+            <p className='responsive-p-text text-rose '>Associate of Science in Web Development</p>
+            <p className="school-grad-date">April 05, 2024</p>
           </div>
         </div>
     </div>
