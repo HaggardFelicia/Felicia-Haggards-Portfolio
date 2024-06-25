@@ -1,34 +1,108 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&display=swap');
+/**====================================
+ * ?                                ABOUT
+ * @author         :  Felicia Haggard
+ * @email          :  haggardwebdev@gmail.com   
+ * @repo           :  HaggardFelicia
+ * @createdOn      :  06/24/2024
+ * @description    :  Tailwind CSS global styles
+ *====================================**/
+/**-----------------------
+  * *       IMPORTS
+  *------------------------**/
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&display=swap&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap&family=Merienda:wght@300..900&display=swap');
 
-.heading-text{
-    font-family: "Cookie", cursive;
-    letter-spacing: 3px;
-}
-.p-text{
-    font-family: "Comfortaa", sans-serif;
-    letter-spacing: 0;
-}
-.tooltip{
-    position: relative;
-    cursor: pointer;
-}
-.tooltiptext{
-    visibility: hidden;
-}
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-  }
-  /* 
+/**-----------------------
+ * *       Layout Styles
+ *------------------------**/
+    /* Page responsive padding */
+    .responsive-page{
+        @apply max-w-md md:max-w-2xl lg:max-w-5xl mx-auto py-10;
+    }
+    /* Header */
+    .header{
+        @apply flex items-center justify-between;
+    }
+    /* Header Logo/Name Link */
+    .responsive-logo-link{
+        @apply bg-gradient-to-b from-red-900 via-red-500 to-rose bg-clip-text text-transparent text-3xl font-bold font-merienda md:font-semibold md:font-cookie md:text-6xl;
+    }
+    /* header page links */
+    .header-links{
+        @apply text-gray hover:underline hover:underline-offset-8 hover:text-rose text-xl font-semibold font-merienda tracking-1 md:text-2xl;
+    }
 
-.comfortaa-<uniquifier> {
-  font-family: "Comfortaa", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
+/**--------------------------------
+ * *       Tooltip fro Osiyo Text
+ *---------------------------------**/
+    .tooltip{
+        position: relative;
+        cursor: pointer;
+    }
+    .tooltiptext{
+        visibility: hidden;
+    }
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
 
-
-*/
+/**-----------------------
+ * *       Fonts
+ *------------------------**/ 
+    /* font for text with gradient. responsive to change fonts at smaller sizes. */
+    .responsive-special-text{
+        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-red-900 via-red-700 to-rose bg-clip-text text-transparent md:text-6xl lg:text-8xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
+    }
+    /* responsive heading. doesn't change font or color only size. */
+    .responive-heading-text{
+        @apply text-4xl font-semibold font-comfortaa md:text-7xl lg:text-8xl text-rose;
+    }
+    /* responsive paragraph text. Only changes size */
+    .responsive-p-text{
+        @apply text-lg font-comfortaa md:text-2xl font-bold ;
+    }
+    /* responsive h2 text. Only changes size. */
+    .responsive-h2-text{
+        @apply text-2xl font-merienda md:text-3xl lg:text-4xl font-bold tracking-2;
+    }
+/**-----------------------
+ * *       Grid
+ *------------------------**/
+    /* Grid for projects */
+    .responsive-grid{
+        @apply mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8;
+    }
+    .responsive-skills-grid{
+        @apply mt-8 grid grid-cols-3  md:grid-cols-4 lg:grid-cols-6 gap-4;
+    
+    }
+/**-----------------------
+ * *       Cards
+ *------------------------**/
+    /* Cards for projects */
+    .card{
+        @apply border-4 border-gray rounded-xl p-2 hover:border-rose hover:scale-105 transition bg-blue-950 ;
+    }
+    /* Card Image */
+    .image-border{
+        @apply object-cover rounded-lg border-2 border-gray hover:border-rose;
+    }
+    /* Card Title */
+    .card-title{
+        @apply font-semibold  text-rose text-2xl text-center font-merienda;
+    }
+    /* Card Title Margins */
+    .margin6{
+        @apply my-6;
+    }
+    .margin3{
+        @apply my-3;
+    }
+/**--------------------------------
+ * *       Project's Individual Page
+ *---------------------------------**/
+    .a-text{
+        @apply rounded-lg font-bold py-3 px-4 whitespace-nowrap hover:bg-rose text-rose hover:text-blue-dark font-merienda text-xl tracking-1;
+    }

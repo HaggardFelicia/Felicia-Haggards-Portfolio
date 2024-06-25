@@ -15,19 +15,19 @@ export default async function Project({params}: Props){
     
     return <div className="">
         {/* header. includes project name and url */}
-        <header className="flex items-center justify-between">
+        <header className="header">
             {/* project name with a gradient styling */}
-            <h1 className="bg-gradient-to-b from-red-900  via-red-700 to-rose bg-clip-text text-transparent font-bold text-6xl  drop-shadow heading-text">
+            <h1 className="responsive-special-text">
                 {project.name}
             </h1>
             {/* project url with bg hover effect */}
-            <a href={project.url} title="View Project" target="_blank" rel="noopener noreferrer" className="rounded-lg font-bold py-3 px-4 whitespace-nowrap hover:bg-rose p-text text-rose hover:text-blue-dark">
+            <a href={project.url} title="View Project" target="_blank" rel="noopener noreferrer" className="a-text">
                 View Project
             </a>
         </header>
 
         {/* content goes here */}
-        <div className="text-xl text-rose mt-5 p-text font-bold">
+        <div className="responsive-p-text text-rose my-[4rem]">
             <PortableText value={project.content}/>
         </div>
 
@@ -37,7 +37,7 @@ export default async function Project({params}: Props){
         alt={project.alt}
         width={1920}
         height={1080}
-        className="object-cover rounded-lg border-2 border-rose mt-10 bg-blue-950"
+        className="image-border my-[4rem] bg-blue-950"
         />
     </div>
 }

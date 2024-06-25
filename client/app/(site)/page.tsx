@@ -10,19 +10,19 @@ export default async function Home() {
     <div className="">
       {/* Hero Section */}
       {/* greating, styling my name with a gradient */}
-      <h1 className="text-7xl font-black text-rose p-text">Hello I&apos;m <span className="bg-gradient-to-b from-red-900  via-red-700 to-rose bg-clip-text text-transparent heading-text text-8xl">Felicia</span>!</h1>
-      <p className="text-2xl font-bold text-gray p-text ">Osiyo Everyone! Check out my projects!</p>
+      <h1 className="responive-heading-text">Hello I&apos;m <span className=" responsive-special-text">Felicia</span>!</h1>
+      <p className="responsive-p-text text-gray">Osiyo Everyone! Check out my projects!</p>
 
       {/* Projects Section */}
-      <h2 className="mt-24 font-bold text-gray text-3xl p-text">My Projects</h2>
+      <h2 className="mt-24 responsive-h2-text text-rose">My Projects</h2>
 
-      <div className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="responsive-grid">
         {/* mapping over the projects */}
         {projects.map((project)=>(
           <Link 
           href={`/projects/${project.slug}`}
             key={project._id}
-            className="border-4 border-gray rounded-xl p-1 hover:border-rose hover:scale-105 transition bg-blue-950"
+            className="card"
           >
             {/* Project Image */}
             {project.image &&(
@@ -31,11 +31,11 @@ export default async function Home() {
               alt={project.name}
               width={750}
               height={300}
-              className="object-cover rounded-lg border-2 border-gray hover:border-rose"/>
+              className="image-border"/>
             )}
 
             {/* Project Name */}
-            <div className="font-extrabold  text-rose mt-3 p-text text-xl text-center">
+            <div className="card-title margin6">
               {project.name}
             </div>
             

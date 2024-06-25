@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       colors: {
         'rose': '#f7c1bb',
-        'gray': '#848c8e',
+        'gray': '#A2A8A9',
         'blue':{
           'dark': '#050450',
           'light': '#123192',
@@ -30,6 +30,19 @@ module.exports = {
         },
       }
     },
+    fontFamily:{
+      cookie: ['Cookie', 'cursive'],
+      comfortaa: ['Comfortaa', 'cursive'],
+      sansita: ['Sansita', 'sans-serif'],
+      merienda: ['Merienda', 'cursive'],
+    },
+    letterSpacing:{
+      '1': '1px',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '5': '5px',
+    }
   },
   plugins: [],
 }

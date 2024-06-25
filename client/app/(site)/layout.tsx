@@ -19,16 +19,16 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="cookie bg-blue-dark max-w-3xl mx-auto py-10">
+      <body className=" bg-blue-dark responsive-page">
         {/* creating header for all pages */}
-        <header className="flex items-center justify-between">
+        <header className="header">
           {/* header logo that takes you to home page */}
-          <Link href="/" className="bg-gradient-to-b from-red-900 via-red-500 to-rose bg-clip-text text-transparent text-5xl font-medium heading-text">Felicia</Link>
+          <Link href="/" className="responsive-logo-link">Felicia</Link>
 
           {/* mapping over the pages */}
           <div className="flex items-center gap-5">
             {pages.map((page) => (
-              <Link key={page._id} href={`/${page.slug}`} className="text-white hover:underline hover:underline-offset-8 hover:text-rose text-3xl font-medium heading-text">
+              <Link key={page._id} href={`/${page.slug}`} className="header-links">
                 {page.title}
               </Link>
             ))}
