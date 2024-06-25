@@ -19,7 +19,7 @@
  *----------------------------**/
     /* Page responsive padding */
     .responsive-page{
-        @apply max-w-md md:max-w-2xl lg:max-w-5xl mx-auto py-10;
+        @apply max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto py-10;
     }
     /* Header */
     .header{
