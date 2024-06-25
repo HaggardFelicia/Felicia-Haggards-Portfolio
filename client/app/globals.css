@@ -95,6 +95,9 @@
     .card-title{
         @apply font-semibold  text-rose text-2xl text-center font-merienda;
     }
+    .skills-card-title{
+        @apply font-semibold  text-rose text-xl text-center font-merienda;
+    }
     /* Card Title Margins */
     .margin6{
         @apply my-6;

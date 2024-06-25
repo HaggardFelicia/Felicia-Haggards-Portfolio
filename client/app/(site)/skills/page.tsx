@@ -29,7 +29,7 @@ export default async function Skills() {
             )}
 
             {/* Skill Name */}
-            <div className="card-title margin3">
+            <div className="skills-card-title margin3">
                 {skill.name}
             </div>
             </div>
