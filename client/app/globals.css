@@ -53,11 +53,11 @@
  *------------------------**/ 
     /* font for text with gradient. responsive to change fonts at smaller sizes. */
     .responsive-special-text{
-        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-red-900 via-red-700 to-rose bg-clip-text text-transparent md:text-6xl lg:text-8xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
+        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-red-900 via-red-700 to-rose bg-clip-text text-transparent md:text-5xl lg:text-6xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
     }
     /* responsive heading. doesn't change font or color only size. */
     .responive-heading-text{
-        @apply text-4xl font-semibold font-comfortaa md:text-7xl lg:text-8xl text-rose;
+        @apply text-4xl font-semibold font-comfortaa md:text-5xl lg:text-6xl text-rose;
     }
     /* responsive paragraph text. Only changes size */
     .responsive-p-text{
