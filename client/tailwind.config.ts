@@ -32,7 +32,7 @@ module.exports = {
     },
     fontFamily:{
       cookie: ['Cookie', 'cursive'],
-      comfortaa: ['Comfortaa', 'sans-serif'],
+      comfortaa: ['Comfortaa', 'serif'],
       merienda: ['Merienda', 'cursive'],
     },
     letterSpacing:{
