@@ -17,6 +17,15 @@
 /**---------------------------
  * *       Layout Page Styles
  *----------------------------**/
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+        @apply w-[10px] bg-transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        @apply bg-rose rounded-lg;
+    }
+
+
     /* Page responsive padding */
     .responsive-page{
         @apply max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto py-10;
@@ -142,4 +151,3 @@
     .school-grad-date{
         @apply text-gray text-base font-comfortaa md:text-xl;
     }
-
