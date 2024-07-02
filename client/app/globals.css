@@ -115,6 +115,9 @@
     .a-text{
         @apply rounded-lg font-bold py-3 px-4 whitespace-nowrap hover:bg-rose text-rose hover:text-blue-dark font-merienda text-xl tracking-1;
     }
+    .image{
+        @apply image-border my-[4rem] bg-blue-950 mx-auto;
+    }
 
 /**-----------------------
  * *       About Page

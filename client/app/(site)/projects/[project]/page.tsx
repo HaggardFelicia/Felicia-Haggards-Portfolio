@@ -35,9 +35,9 @@ export default async function Project({params}: Props){
         <Image 
         src={project.image}
         alt={project.alt}
-        width={1920}
-        height={1080}
-        className="image-border my-[4rem] bg-blue-950"
+        width={600}
+        height={600}
+        className="image"
         />
     </div>
 }
