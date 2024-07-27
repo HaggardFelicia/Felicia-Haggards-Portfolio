@@ -19,7 +19,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className=" bg-blue-dark responsive-page">
+      <body className=" responsive-page">
         {/* creating header for all pages */}
         <header className="header">
           {/* header logo that takes you to home page */}

@@ -11,10 +11,10 @@ export default async function Home() {
       {/* Hero Section */}
       {/* greating, styling my name with a gradient */}
       <h1 className="responive-heading-text">Hello I&apos;m <span className=" responsive-special-text">Felicia</span>!</h1>
-      <p className="responsive-p-text text-gray">Osiyo Everyone! Check out my projects!</p>
+      <p className="responsive-p-text">Osiyo Everyone! Check out my projects!</p>
 
       {/* Projects Section */}
-      <h2 className="mt-24 responsive-h2-text text-rose">My Projects</h2>
+      <h2 className="mt-24 responsive-h2-text">My Projects</h2>
 
       <div className="responsive-grid">
         {/* mapping over the projects */}

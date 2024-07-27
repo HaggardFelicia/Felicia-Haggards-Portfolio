@@ -25,7 +25,7 @@ export default async function Skills() {
                 alt={skill.name}
                 width={150}
                 height={150}
-                className="image-border bg-blue-900"/>
+                className="image-border"/>
             )}
 
             {/* Skill Name */}

@@ -14,6 +14,13 @@
     @tailwind utilities;
     @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&display=swap&family=Merienda:wght@300..900&display=swap');
 
+/**----------------------------------------------
+ * *                   Colors
+ *   gray-900,
+ *   emerald-400
+ *   purple- 950-200
+ *---------------------------------------------**/
+
 /**---------------------------
  * *       Layout Page Styles
  *----------------------------**/
@@ -22,9 +29,11 @@
         @apply w-[10px] bg-transparent;
     }
     ::-webkit-scrollbar-thumb {
-        @apply bg-rose rounded-lg;
+        @apply bg-emerald-400 rounded-lg;
     }
-
+    :root{
+        @apply bg-gray-900 text-emerald-200;
+    }
 
     /* Page responsive padding */
     .responsive-page{
@@ -36,11 +45,11 @@
     }
     /* Header Logo/Name Link */
     .responsive-logo-link{
-        @apply bg-gradient-to-b from-red-900 via-red-500 to-rose bg-clip-text text-transparent text-4xl tracking-3 font-bold font-cookie md:font-semibold md:text-6xl;
+        @apply bg-gradient-to-b from-purple-950  via-purple-400 to-emerald-400 bg-clip-text text-transparent text-4xl tracking-3 font-bold font-cookie md:font-semibold md:text-6xl;
     }
     /* header page links */
     .header-links{
-        @apply text-gray hover:underline hover:underline-offset-8 hover:text-rose text-xl font-semibold font-merienda tracking-1 md:text-2xl;
+        @apply text-purple-400 hover:underline hover:underline-offset-8 hover:text-emerald-400 text-xl font-semibold font-merienda tracking-1 md:text-2xl;
     }
 
 /**--------------------------------
@@ -62,16 +71,19 @@
  *------------------------**/ 
     /* font for text with gradient. responsive to change fonts at smaller sizes. */
     .responsive-special-text{
-        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-red-900 via-red-700 to-rose bg-clip-text text-transparent md:text-5xl lg:text-6xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
+        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-purple-950  via-purple-400 to-emerald-400 bg-clip-text text-transparent md:text-5xl lg:text-6xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
     }
     /* responsive heading. doesn't change font or color only size. */
     .responive-heading-text{
-        @apply text-4xl font-semibold font-comfortaa md:text-5xl lg:text-6xl text-rose;
+        @apply text-4xl font-semibold font-comfortaa md:text-5xl lg:text-6xl text-emerald-400;
     }
     /* responsive paragraph text. Only changes size */
     .responsive-p-text{
         @apply text-lg font-comfortaa md:text-2xl font-bold ;
     }
+    /* .text-color{
+        @apply text-emerald-200;
+    } */
     /* responsive h2 text. Only changes size. */
     .responsive-h2-text{
         @apply text-2xl font-merienda md:text-3xl lg:text-4xl font-bold tracking-2;
@@ -94,18 +106,18 @@
  *------------------------**/
     /* Cards for projects */
     .card{
-        @apply border-4 border-gray rounded-xl p-2 hover:border-rose hover:scale-105 transition bg-blue-950 ;
+        @apply border-4 border-gray-900 rounded-2xl p-2 hover:border-purple-400 hover:scale-105 transition bg-gray-800;
     }
     /* Card Image */
     .image-border{
-        @apply object-cover rounded-lg border-2 border-gray hover:border-rose;
+        @apply object-cover rounded-xl border-2 border-gray-900 hover:border-emerald-400;
     }
     /* Card Title */
     .card-title{
-        @apply font-semibold  text-rose text-2xl text-center font-merienda;
+        @apply font-semibold  text-emerald-300 text-2xl text-center font-merienda;
     }
     .skills-card-title{
-        @apply font-semibold  text-rose text-xl text-center font-merienda;
+        @apply font-semibold  text-emerald-300 text-xl text-center font-merienda;
     }
     /* Card Title Margins */
     .margin6{
@@ -122,10 +134,10 @@
  * *       Project's Individual Page
  *---------------------------------**/
     .a-text{
-        @apply rounded-lg font-bold py-3 px-4 whitespace-nowrap hover:bg-rose text-rose hover:text-blue-dark font-merienda text-xl tracking-1;
+        @apply rounded-lg font-bold py-3 px-4 whitespace-nowrap hover:bg-emerald-400 text-purple-400 hover:text-gray-900 font-merienda text-xl tracking-1;
     }
     .image{
-        @apply image-border my-[4rem] bg-blue-950 mx-auto;
+        @apply image-border my-[4rem] bg-gray-800 mx-auto;
     }
 
 /**-----------------------
@@ -133,21 +145,53 @@
  *------------------------**/
     /* Name Responsive Design */
     .responsive-name{
-        @apply text-2xl font-black font-merienda  bg-gradient-to-b from-red-900 via-red-700 to-rose bg-clip-text text-transparent md:font-cookie md:text-5xl md:tracking-2;
+        @apply text-2xl font-black font-merienda  bg-gradient-to-b from-purple-950  via-purple-400 to-emerald-400 bg-clip-text text-transparent md:font-cookie md:text-5xl md:tracking-2;
     }
     /* School info */
-    .school-border{
-        @apply border-2 border-gray rounded-xl bg-blue-950 p-1 md:flex md:justify-between md:p-2;
-    }
     .school-image{
-        @apply object-cover w-[450px] aspect-auto rounded-lg mx-auto md:w-[300px];
+        @apply object-cover w-[450px] aspect-auto rounded-2xl mx-auto md:w-[300px];
+    }
+    .border{
+        @apply border-2 rounded-3xl bg-gray-800 p-1 md:flex md:justify-between md:p-2 mb-8;
     }
     .school-text-div{
-        @apply text-center py-10 md:text-right md:pt-4 md:pb-0 lg:py-10;
+        @apply text-center my-auto pr-2;
     }
     .school-text-title{
-        @apply bg-gradient-to-b from-red-900  via-red-700 to-rose bg-clip-text text-transparent  text-4xl font-merienda font-medium -tracking-3 lg:text-5xl;
+        @apply bg-gradient-to-b  bg-clip-text text-transparent  text-4xl font-merienda font-medium -tracking-3 lg:text-5xl;
     }
     .school-grad-date{
-        @apply text-gray text-base font-comfortaa md:text-xl;
+        @apply text-base font-comfortaa md:text-xl;
+    }
+    /* Full Sail */
+    .Fullsail-school-border{
+        @apply border-orange-400 ;
+    }
+    .Fullsail-school-text-div{
+        @apply text-right;
+    }
+    .Fullsail-school-p-text{
+        @apply text-orange-200;
+    }
+    .Fullsail-school-text-title{
+        @apply  from-orange-800  via-orange-500 to-gray-200 ;
+    }
+    .Fullsail-school-grad-date{
+        @apply text-orange-400;
+    }
+    /* Marion */
+    .marion-school-border{
+        @apply border-purple-400;
+    }
+    .marion-school-text-div{
+        @apply text-left;
+    }
+    .marion-school-p-text{
+        @apply text-purple-200;
+    }
+    .marion-school-text-title{
+        @apply from-purple-800  via-purple-500 to-gray-200 ;
+    }
+    .marion-school-grad-date{
+        @apply text-purple-400;
     }

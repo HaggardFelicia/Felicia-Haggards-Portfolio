@@ -27,7 +27,7 @@ export default async function Project({params}: Props){
         </header>
 
         {/* content goes here */}
-        <div className="responsive-p-text text-rose margin4rem">
+        <div className="responsive-p-text text-color margin4rem">
             <PortableText value={project.content} />
         </div>
 
