@@ -9,4 +9,5 @@ export type Skill = {
     url: string;
     content: PortableTextBlock[];
     alt: string;
+    
 };
