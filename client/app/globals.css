@@ -29,10 +29,10 @@
         @apply w-[10px] bg-transparent;
     }
     ::-webkit-scrollbar-thumb {
-        @apply bg-emerald-400 rounded-lg;
+        @apply bg-violet-800 dark:bg-orange-800 rounded-lg;
     }
     :root{
-        @apply bg-gray-900 text-emerald-200;
+        @apply bg-orange-200 dark:bg-violet-800  text-violet-800 dark:text-orange-500;
     }
 
     /* Page responsive padding */
@@ -45,25 +45,12 @@
     }
     /* Header Logo/Name Link */
     .responsive-logo-link{
-        @apply bg-gradient-to-b from-purple-950  via-purple-400 to-emerald-400 bg-clip-text text-transparent text-4xl tracking-3 font-bold font-cookie md:font-semibold md:text-6xl;
+        @apply bg-gradient-to-b  from-violet-950 via-violet-800  to-orange-800 dark:from-orange-800 dark:via-orange-500 dark:to-violet-800 
+        bg-clip-text text-transparent text-4xl tracking-3 font-bold font-cookie md:font-semibold md:text-6xl;
     }
     /* header page links */
     .header-links{
-        @apply text-purple-400 hover:underline hover:underline-offset-8 hover:text-emerald-400 text-xl font-semibold font-merienda tracking-1 md:text-2xl;
-    }
-
-/**--------------------------------
- * *       Tooltip fro Osiyo Text
- *---------------------------------**/
-    .tooltip{
-        position: relative;
-        cursor: pointer;
-    }
-    .tooltiptext{
-        visibility: hidden;
-    }
-    .tooltip:hover .tooltiptext {
-        visibility: visible;
+        @apply text-violet-800 dark:text-orange-500 hover:underline hover:underline-offset-8 hover:text-emerald-400 text-xl font-semibold font-merienda tracking-1 md:text-2xl;
     }
 
 /**-----------------------
@@ -71,11 +58,11 @@
  *------------------------**/ 
     /* font for text with gradient. responsive to change fonts at smaller sizes. */
     .responsive-special-text{
-        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-purple-950  via-purple-400 to-emerald-400 bg-clip-text text-transparent md:text-5xl lg:text-6xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
+        @apply text-4xl font-bold font-merienda  bg-gradient-to-b from-violet-950  via-violet-800 to-orange-800 dark:from-orange-800  dark:via-orange-500 dark:to-violet-800 bg-clip-text text-transparent md:text-5xl lg:text-6xl -tracking-1 md:-tracking-3 lg:-tracking-5; 
     }
     /* responsive heading. doesn't change font or color only size. */
     .responive-heading-text{
-        @apply text-4xl font-semibold font-comfortaa md:text-5xl lg:text-6xl text-emerald-400;
+        @apply text-4xl font-semibold font-comfortaa md:text-5xl lg:text-6xl text-violet-800 dark:text-orange-500;
     }
     /* responsive paragraph text. Only changes size */
     .responsive-p-text{
