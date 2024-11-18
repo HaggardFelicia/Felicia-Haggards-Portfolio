@@ -12,7 +12,7 @@ export default function page() {
         <h1 className='responsive-special-text'>About</h1>
 
         {/* Short Intro */}
-        <p className='responsive-p-text margin4rem indent-8'>My name is <span className='responsive-name'>Felicia Haggard!</span> My journey into web development began with a high school introduction to HTML. With an Associate of Science in Web Development from Full Sail University, I have honed my skills in front-end technologies, including React.js, TypeScript, and CSS. One of the pivotal moments in my college career was developing an application that adhered to WCAG guidelines, showcasing my commitment to inclusive design. Let's connect and create something extraordinary together.</p>
+        <p className='responsive-p-text margin4rem indent-8'>My name is <span className='responsive-name'>Felicia Haggard!</span> My journey into web development began with a high school introduction to HTML. With an Associate of Science in Web Development from Full Sail University, I have honed my skills in front-end technologies, including React.js, TypeScript, and CSS. One of the pivotal moments in my college career was developing an application that adhered to WCAG guidelines, showcasing my commitment to inclusive design. Let&apos;s connect and create something extraordinary together.</p>
 
         {/* School Info */}
 
