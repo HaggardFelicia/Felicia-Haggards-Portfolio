@@ -19,7 +19,7 @@ export default function page() {
         {/* Marion Co High School */}
         <div className="marion-school-border border">
           <div className='marion-school-text-div school-text-div'>
-            <h2 className='marion-school-text-title school-text-title'>Marion County High School</h2>
+            <h2 className='marion-school-text-title school-text-title'>Marion Co High School</h2>
             <p className="marion-school-grad-date school-grad-date">May 25, 2013</p>
           </div>
           <div className=''>

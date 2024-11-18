@@ -1,3 +1,5 @@
+import { url } from "inspector"
+
 /** @type {import('tailwindcss').Config} */
 const colors = require('tailwindcss/colors')
 module.exports = {
@@ -61,13 +63,19 @@ module.exports = {
         100: '#E1D8F7',
         200: '#D7C8F3',
         300: '#D0BEF2',
-        400: '#C0A7EB',
+        400: '#C0A7EB', 
         500: '#B596E5',
-        600: '#9483C3',
+        600: '#9483C3',//fails when paired with purple 300
         700: '#7C68B6',
         800: '#473773', //marion
-        900: '#3D2E60',
+        900: '#3D2E60',// failes at normal text when paired to orange 500
         950: '#2C2145',
+      },//all violets fail when paired with orange 500
+      purple:{
+        50: '#221B37',//failes when paired to orange 500
+        100: '#1A1429',//passes when paired to orange 500
+        200: '#110D1C',
+        300: '#09070E'
       },
       orange:{
         100: '#F8D1B4',
@@ -77,9 +85,15 @@ module.exports = {
         500: '#F5895C',
         600: '#F19B7E',
         700: '#EE7E59',
-        800:'#E85A29',//fs
-        900: '#DE4917',
+        800:'#E85A29',//fs 
+        900: '#DE4917', //fails when paired with purple 300
         950: '#B93D13'
+      },
+      darkOrange:{
+        50:'#4A1808',
+        100:'#371206',
+        200:'#250C04',//passes when paired with orange 500
+        300: '#120602',
       },
       gray:{
         50: '#f9fafb',
@@ -87,39 +101,16 @@ module.exports = {
         200: ' #e5e7eb',
         300: '#d1d5db ',
         400: '#9ca3af ',
-        500: '#6b7280 ',
+        500: '#6b7280 ',//fails when paired with purple 300
         600: '#4b5563 ',
         700: ' #334155', 
         800: ' #1e293b',
-        900: '#0f172a ',
+        900: '#0f172a ',//passes when paired to orange 500
         950:'#020617 '
       },
-      emerald:{
-        50: ' #ecfdf5',
-        100: ' #d1fae5',
-        200: ' #a7f3d0',
-        300: '#6ee7b7 ',
-        400: '#34d399 ',
-        500: '#10b981 ',
-        600: '#059669 ',
-        700: ' #047857', 
-        800: ' #065f46',
-        900: '#064e3b ',
-        950:' #022c22'
-      },
-      purple:{
-        50: ' #faf5ff',
-        100: ' #f3e8ff',
-        200: '#e9d5ff ',
-        300: ' #d8b4fe',
-        400: ' #c084fc',
-        500: '#a855f7 ',
-        600: ' #9333ea',
-        700: ' #7e22ce', 
-        800: ' #6b21a8',
-        900: '#581c87 ',
-        950:'#3b0764 '
-      }
+    },
+    cursor:{
+      'violet-arrow': 'url(/app/assets/violet-arrow.png) default'
     }
   },
   plugins: [],
