@@ -108,10 +108,20 @@ module.exports = {
         900: '#0f172a ',//passes when paired to orange 500
         950:'#020617 '
       },
+      jacarta: {  
+        DEFAULT: '#473773',  
+        50: '#D3CCE7',  
+        100: '#C8BFE0',  
+        200: '#B0A3D3',  
+        300: '#9887C6',  
+        400: '#806CB9',  
+        500: '#6951AA',  
+        600: '#58448F',  
+        700: '#473773',  
+        800: '#30254D',  
+        900: '#181327',  
+        950: '#0C0A14'},//tailwind shades using 473773
     },
-    cursor:{
-      'violet-arrow': 'url(/app/assets/violet-arrow.png) default'
-    }
   },
   plugins: [],
 }

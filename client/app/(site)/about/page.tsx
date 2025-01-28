@@ -1,8 +1,6 @@
 import React from 'react'
 import Fullsail from '../../assets/Fullsail.jpg'
 import Marion from '../../assets/Marion.jpg'
-import Warrior from '../../assets/warrior.jpg'
-import MCHS from '../../assets/mchs.jpg'
 import Image from 'next/image'
 
 export default function page() {
@@ -17,24 +15,24 @@ export default function page() {
         {/* School Info */}
 
         {/* Marion Co High School */}
-        <div className="marion-school-border border">
-          <div className='marion-school-text-div school-text-div'>
-            <h2 className='marion-school-text-title school-text-title'>Marion Co High School</h2>
-            <p className="marion-school-grad-date school-grad-date">May 25, 2013</p>
+        <div className="border">
+          <div className='school-text-div'>
+            <h2 className='school-text-title'>Marion Co High School</h2>
+            <p className="school-grad-date">May 25, 2013</p>
           </div>
           <div className=''>
             <Image src={Marion} alt="Marion County High School"  className='school-image' />
           </div>
         </div>
         {/* Full Sail UNiversity */}
-        <div className="Fullsail-school-border border">
+        <div className="border">
           <div className=''>
             <Image src={Fullsail} alt="Full Sail University Logo"  className='school-image' />
           </div>
-          <div className='Fullsail-school-text-div school-text-div'>
-            <h2 className='Fullsail-school-text-title school-text-title'>Full Sail University</h2>
-            <p className='responsive-p-text Fullsail-school-p-text '>Associate of Science in Web Development</p>
-            <p className="Fullsail-school-grad-date school-grad-date">April 05, 2024</p>
+          <div className='school-text-div'>
+            <h2 className='school-text-title'>Full Sail University</h2>
+            <p className='responsive-p-text'>Associate of Science in Web Development</p>
+            <p className="school-grad-date">April 05, 2024</p>
           </div>
         </div>
     </div>
